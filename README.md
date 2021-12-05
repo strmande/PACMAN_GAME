@@ -8,6 +8,7 @@
  As a game player, you will be able to change the number of ghosts, so that you can change the level of difficulty of the game.
  (3) the ability to customize the avatars of the game characters.
  As a game player, you will be able to change the appearance of the ghosts and Pacman, so that you can customize the game to your liking.
+ 
  ***Set up***
 
 Download the project which also include the libraries needed to run the game. Extract PACMAN_GAME and create a new project for mason in your IDE. Extract both j3dlibs.zip and libraries.zip and add their files as User libraries in your IDE. Import mason folder into your IDE and build path to user libraries added.  
