@@ -11,7 +11,7 @@
  
  As a game player, you will be able to change the number of ghosts, so that you can change the level of difficulty of the game.
  
- (3) the ability to customize the avatars of the game characters.
+ (3) The ability to customize the avatars of the game characters.
  
  As a game player, you will be able to change the appearance of the ghosts and Pacman, so that you can customize the game to your liking.
  
