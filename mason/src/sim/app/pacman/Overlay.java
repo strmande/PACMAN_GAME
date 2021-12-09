@@ -54,7 +54,7 @@ public class Overlay extends FieldPortrayal2D
             }
                 
         // show the text at bottom
-        String text = "M: MASON   P: Pause   R: Reset   adws / \u2190\u2192\u2191\u2193";
+        String text = "M: Setup   P: Pause   R: Reset   adws / \u2190\u2192\u2191\u2193";
         bounds = new TextLayout(text, font,  graphics.getFontRenderContext()).getBounds();
         graphics.drawString(text, (int)((info.clip.width - bounds.getWidth()) / 2), 
             (int)((info.clip.height - GUTTER + firstTimeScoreY)));

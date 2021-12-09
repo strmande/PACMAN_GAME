@@ -21,8 +21,25 @@ public class SetupGUI {
 	
 	public SetupGUI() 
 		{
+		resetSettingsState();
 		initComponent();
 		}
+	
+	// reset static state and settings to initial conditions; used if the menu is re-entered after first setup
+	public void resetSettingsState() {
+		game_has_been_set_up = false;
+		
+		PacMan.NUM_OF_PLAYERS = 1;
+		PacMan.NUM_OF_GHOSTS = 1;
+
+		PacManWithUI.player_1_color = Color.yellow;
+		PacManWithUI.player_2_color = Color.magenta;
+		
+		PacManWithUI.blinkySetSkinClassic();
+		PacManWithUI.clydeSetSkinClassic();
+		PacManWithUI.inkySetSkinClassic();
+		PacManWithUI.pinkySetSkinClassic();
+	}
 	
 	
 	

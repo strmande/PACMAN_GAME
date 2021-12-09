@@ -519,16 +519,9 @@ public class PacManWithUI extends GUIState
                     case KeyEvent.VK_P:             // Pause or unpause the game
                         cont.pressPause();
                         break;
-                    case KeyEvent.VK_M:             // Call forth MASON's new simulation window
-                        if (cont.getPlayState() != cont.PS_PAUSED)  // pause it!
-                            cont.pressPause();
-                        cont.doNew();
-
-                        // the MASON window belongs to our frame, so Java stupidly doesn't send
-                        // us a window activated event when the MASON window is closed and our
-                        // frame comes to the fore again.  So we have to manually do request
-                        // focus again here.
-                        display.requestFocusInWindow();
+                    case KeyEvent.VK_M:             // Call setup menu back and close gameplay window
+                        SetupGUI.main(null);
+                        displayFrame.setVisible(false);
                         break;
                     default:
                         // do nothing
